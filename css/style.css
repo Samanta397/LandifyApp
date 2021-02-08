@@ -1,0 +1,464 @@
+:root {
+	--swiper-navigation-size: 22px;
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	font-style: 16px;
+	color: #18191F;
+}
+
+.header {
+	background: url(../img/Background.svg) no-repeat;
+	background-size: cover;
+
+}
+
+.logo-link {
+	text-decoration: none;
+}
+
+.menu-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transform-origin: right center;
+	transform: scaleX(1) translateX(0%);
+	opacity: 1;
+}
+
+
+.menu-item-link {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	text-decoration: none;
+	color: #18191F;
+	
+}
+
+.menu-item-link:hover {
+	text-decoration: none;
+	color: #18191F;
+	border-bottom: 1px solid #18191F;
+}
+.menu-btn{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-top: -127px;
+    margin-left: 90%;
+	position: relative;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1px;
+	margin-left: -10px;
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+}
+.menu-btn span::before,
+.menu-btn span::after{
+	content: '';
+	transition: 0.3s;
+}
+.menu-btn span::before{
+	transform: translateY(-5px);
+}
+.menu-btn span::after{
+	transform: translateY(5px);
+	
+}
+.menu-btn_active span{
+	height: 0;
+}
+.menu-btn_active span::before{
+	transform: rotate(45deg);
+}
+.menu-btn_active span::after{
+	transform: rotate(-45deg);
+}
+.main-content {
+	margin-top: 71px;
+	margin-bottom: 32px;
+}
+
+.main-title {
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 98px;
+}
+
+.getStarted-btn {
+	padding: 16px 41px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	color: #FFFFFF;
+	background-color: #8C30F5;
+	border-radius: 8px;
+}
+
+.getStarted-btn:hover {
+	color: #fff;
+	background-color: #702ac0;
+}
+
+.main-image {
+	width: 350px;
+	height: 640px;
+}
+
+.companies {
+	margin: 16px 0;
+	border-top: 1px solid #f5eded;
+	border-bottom: 1px solid #f5eded;
+}
+
+.swiper-container {
+	position: relative;
+}
+
+.company-inner {
+	margin: 24px 109px 24px 109px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.title {
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 64px;
+}
+
+.text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.feature-icon {
+	margin-bottom: 24px;
+}
+
+.subtitle {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 8px;
+}
+
+.subtitle-text {
+	max-width: 540px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.feature-item {
+	margin-bottom: 64px;
+}
+
+.testimonial {
+	padding-top: 120px;
+	/* padding-bottom: 80px; */
+	background-color: #D5FAFC;
+}
+
+.testimonial-card-1 {
+	top: 47px;
+}
+
+.testimonial-card-2 {
+	top: -160px;
+	left: 144px;
+}
+
+.testimonial-card-3 {
+	top: 90px;
+	left: 190px;
+}
+
+.testimonial-main {
+	position: relative;
+	z-index: 10;
+}
+
+.testimonial-main::before {
+	content: url(../img/quotes.svg);
+	top: -52px;
+	left: -81px;
+	position: absolute;
+	z-index: -1;
+}
+
+.testimonial-card {
+	padding: 32px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+	border-radius: 8px;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.small-text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: #969BAB;
+}
+
+.company-logo {
+	width: 140px;
+	height: 40px;
+}
+
+.testimonial-card .text,
+.testimonial-card .name,
+.testimonial-card .small-text {
+	padding-left: 32px;
+}
+
+.testimonial-card .text {
+	margin-top: 32px;
+	margin-bottom: 24px;
+	position: relative;
+}
+
+.testimonial-card .text::before {
+	content: url(../img/qoute_mark.svg);
+	position: absolute;
+	top: -10px;
+	left: 0;
+}
+
+
+.stats-block {
+	/* width: 110px; */
+	height: fit-content;
+
+}
+
+.stats-icon {
+	margin-right: 16px;
+}
+
+.numbers {
+	font-weight: 800;
+	font-size: 28px;
+	line-height: 40px;
+}
+
+.numbers-description {
+	line-height: 26px;
+}
+
+.img-card {
+	background-color: #F1E4FF;
+}
+
+.img-card img {
+	margin-top: 56px;
+	width: 360px;
+	height: 448px;
+}
+
+.second-title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 54px;
+}
+
+.headline .text {
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+.getStarted-link {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #8C30F5;
+}
+
+.getStarted-link img {
+	margin-left: 8px;
+}
+
+.img-lights {
+	width: 100%;
+}
+
+.cta {
+	background-color: #2EC5CE;
+}
+
+.cta-content {
+	margin-top: 68px;
+	margin-bottom: 67px;
+}
+
+.cta-content .text {
+	margin-top: 8px;
+	margin-bottom: 48px;
+}
+
+.get-app {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.cta-content .google-play-btn {
+	margin-right: 12px;
+}
+
+.img-phone {
+	margin-top: -338px;
+	margin-left: 270px;
+}
+
+.footer {
+	padding-top: 56px;
+	padding-bottom: 56px;
+	background-color: #0B0D17;
+}
+
+.mini-logo-img {
+	margin-bottom: 24px;
+}
+
+.footer-list {
+	margin-bottom: 12px;
+}
+
+.footer-link {
+	margin-right: 24px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
+.footer-text {
+	margin-top: 24px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: #D9DBE1;
+}
+.text-getApp{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	color: #D9DBE1;
+}
+.store .app-store-btn img,
+.store .google-play-btn img{
+	margin-top: 16px;
+}
+.footer .text-getApp{
+	margin-bottom: 0;
+}
+@media(max-width: 992px) {
+	.main-title {
+		font-size: 48px;
+		line-height: 68px;
+	}
+
+	.main-image {
+		width: 226px;
+		height: 416px;
+	}
+
+	.company-inner {
+		margin: 24px 50px 24px 50px;
+	}
+
+	.testimonial {
+		padding-bottom: 80px;
+	}
+
+	.testimonial-card-1,
+	.testimonial-card-2,
+	.testimonial-card-3 {
+		top: 0;
+		left: 0;
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 768px) {
+	.main-content {
+		margin-top: 32px;
+	}
+
+
+	.main-title {
+		font-size: 42px;
+		line-height: 52px;
+	}
+	.company-inner {
+		margin: 24px 20px 24px 20px;
+	}
+}
+
+@media(max-width: 576px) {
+	.header {
+		background-image: none;
+		background-color: rgba(242, 247, 255, 0.7);
+	}
+	.header-menu{
+		height: 25px;
+	}
+
+	.company-inner {
+		margin: 24px 30px 24px 30px;
+	}
+
+	.title {
+		font-size: 38px;
+		line-height: 44px;
+	}
+
+	.testimonial-main::before {
+		display: none;
+	}
+
+	.stats .title {
+		font-size: 26px;
+		line-height: 31px;
+	}
+	.store .app-store-btn img,
+	.store .google-play-btn img{
+		width: 115px;
+		height: 34px;
+	}
+	.menu-list {
+		transform-origin: right center;
+		transform: scaleX(0) translateX(20%);
+		opacity: 0;
+	}
+	.menu-list_active{
+		transform: scaleX(1) translateX(0%);
+		opacity: 1;
+	}
+	.menu-item{
+		display: flex;
+    	justify-content: flex-end;
+	}
+}
